@@ -32,7 +32,6 @@ namespace Mapowanie
             services.AddControllers();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<IAmountCalculator, AmountCalculator>();
-            //services.AddTransient<AmountResolver>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mapowanie", Version = "v1" });
